@@ -8,7 +8,7 @@ Ecommerce - Projeto Integrador
 
 ## Participants
 
-| [<img src="https://avatars.githubusercontent.com/u/89157173?v=4" width="75px;"/>] [<img src="https://avatars.githubusercontent.com/u/102265016?v=4" width="75px;"/>] |
+<img src="https://avatars.githubusercontent.com/u/89157173?v=4" width="75px;"/> || <img src="https://avatars.githubusercontent.com/u/102265016?v=4" width="75px;"/>
 
 | [Victor Ribeiro](https://github.com/VictorRibeiroH)
 | [Kayky Gabriel](https://github.com/KaykyGN)
