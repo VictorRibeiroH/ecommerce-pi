@@ -91,6 +91,10 @@ body {
 }
 /* Home */
 
+#hero-sec {
+  background-image: url("img/hero4.png");
+}
+
 /* Shop */
 
 /* Produto */
