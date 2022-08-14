@@ -2,7 +2,7 @@
 Act&Geek
 </h1>
 
-<p align="center">Ecommerce</p>
+<p align="center">Ecommerce feito no Curso da DigitalHouse para aplicar os conhecimentos aplicados durante o curso</p>
 
 <hr>
 
