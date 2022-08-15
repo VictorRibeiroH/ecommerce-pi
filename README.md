@@ -14,8 +14,11 @@ Act&Geek
 | [Victor Ribeiro](https://github.com/VictorRibeiroH)
 | [Kayky Gabriel](https://github.com/KaykyGN)
 
-## Tecnologias utilizadas
+## 🛠 Tecnologias utilizadas
 
-- [] --
+- [✔️] HTML
+- [✔️] CSS
+- [✔️] JavaScript
+- [✔️] MySQL
 
 
