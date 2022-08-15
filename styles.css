@@ -39,6 +39,23 @@ p {
   padding: 40px 80px;
 }
 
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
 body {
   width: 100%;
 }
@@ -70,7 +87,7 @@ body {
   position: relative;
 }
 
-#navbar li a{
+#navbar li a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
@@ -94,6 +111,45 @@ body {
   left: 21px;
   transition-delay: 2s;
 }
+
+/* Estilização Search */
+
+/* #input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input input {
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+}
+
+::placeholder {
+  color: #088178;
+}
+
+.search-bar button img {
+  width: 25px;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+  background: #088178;
+  cursor: pointer;
+} */
+
 /* Home */
 
 #hero-sec {
@@ -109,7 +165,7 @@ body {
   justify-content: center;
 }
 
-#hero-sec button{
+#hero-sec button {
   background-image: url("img/button.png");
   padding: 14px 50px 14px 65px;
   border: none;
@@ -119,7 +175,7 @@ body {
   background-color: transparent;
   border-radius: 5px;
   min-width: 200px;
-  color: #088178;;
+  color: #088178;
   z-index: 0;
   letter-spacing: 1px;
   transition: all 0.3s;
@@ -127,24 +183,23 @@ body {
   font-size: 15px;
 }
 
-#hero-sec button::before{
-  content: '';
+#hero-sec button::before {
+  content: "";
   position: absolute;
   display: block;
   top: 0;
   left: -50px;
   width: 70%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, #FFF, transparent);
+  background: linear-gradient(90deg, transparent, #fff, transparent);
   transition: all 1.1s;
   z-index: -1;
   transform: translateX(-120px) skew(-20deg);
 }
 
-#hero-sec button:hover::before{
+#hero-sec button:hover::before {
   transform: translateX(300px) skew(-20deg);
 }
-
 
 #hero-sec h4 {
   padding-bottom: 15px;
@@ -153,7 +208,6 @@ body {
 #hero-sec h1 {
   color: #088178;
 }
-
 
 /* Shop */
 
@@ -172,7 +226,7 @@ body {
   border: none;
   border-radius: 5px;
   margin: 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 #features .fe-box:hover {
@@ -238,7 +292,6 @@ body {
 #product1 .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
   transform: scale(1.2);
-
 }
 
 #product1 .pro img {
@@ -288,7 +341,38 @@ body {
   right: 10px;
 }
 
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/banner/b2.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
 
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+}
+
+#banner h2 span {
+  color: #ef3636;
+}
+
+#banner button:hover {
+  background: #088178;
+  color: #fff;
+}
 /* Produto */
 
 /* Blog */
