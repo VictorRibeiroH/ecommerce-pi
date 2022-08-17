@@ -423,7 +423,15 @@ body {
   background-size: cover;
   background-position: center;
   padding: 30px;
+  border-radius: 25px;
 }
+
+#sm-banner .banner-box:hover{
+  background: url("img/banner/dragonball.png") no-repeat;
+  background-position: center;
+  transition: background .55s;
+}
+
 
 #sm-banner h4 {
   color: #fff;
@@ -444,9 +452,23 @@ body {
   padding-bottom: 15px;
 }
 
-#sm-banner .banner-box:hover button {
+#sm-banner .banner-box button {
+  font-family: 'FontAwesome';
   background: #088178;
   border: 1px solid #088178;
+  transition: background-color .25s, padding-bottom .25s;
+  border-radius: 15px;
+}
+
+#sm-banner .banner-box button:hover{  
+  z-index: 0;
+  transform: translate(20px);
+  transition: transform .25s;
+}
+
+#sm-banner .banner-box button:hover::after{
+  transform: translate(-20px);
+  transition: padding-left .25s;
 }
 
 /*  */
@@ -462,6 +484,12 @@ body {
   background-size: cover;
   background-position: center;
   padding: 30px;
+  border-radius: 25px;
+}
+
+#sm-banner .banner-box2:hover{
+  background: url("img/banner/dragonball.png");
+  transition: background .55s;
 }
 
 #sm-banner h4 {
@@ -609,24 +637,57 @@ body {
 }
 
 #newsletter input {
-  height: 3.125rem;
+  height: 2.95rem;
   padding: 0 1.25em;
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
-  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 #newsletter button {
+  display: inline-block;
+  min-width: 180px;
+  padding: 15px 10px;
   background-color: #088178;
+  font-weight: 600;
   color: #fff;
   white-space: nowrap;
-  border-top-left-radius: 0;
+  cursor: pointer;
+  border: none;
+  transition: background-color .25s, padding-right .25s;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
+
+#newsletter i{
+  opacity: 0;
+}
+
+#newsletter button:hover{
+  background-color: #07726a;
+  padding-right: 25px;
+}
+
+#newsletter button::after{ 
+  content: '\f178';
+  z-index: 0;
+  transform: translate(-17px, -50%);
+  font-family: 'FontAwesome';
+  font-weight: 100;
+  opacity: 0;
+  transition: transform .25s, opacity .25s;
+}
+
+#newsletter button:hover::after{
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+
+
 /* Produto */
 
 /* Blog */
