@@ -426,12 +426,11 @@ body {
   border-radius: 25px;
 }
 
-#sm-banner .banner-box:hover{
+/* #sm-banner .banner-box:hover {
   background: url("img/banner/dragonball.png") no-repeat;
   background-position: center;
-  transition: background .55s;
-}
-
+  transition: background 0.55s;
+} */
 
 #sm-banner h4 {
   color: #fff;
@@ -452,25 +451,6 @@ body {
   padding-bottom: 15px;
 }
 
-#sm-banner .banner-box button {
-  font-family: 'FontAwesome';
-  background: #088178;
-  border: 1px solid #088178;
-  transition: background-color .25s, padding-bottom .25s;
-  border-radius: 15px;
-}
-
-#sm-banner .banner-box button:hover{  
-  z-index: 0;
-  transform: translate(20px);
-  transition: transform .25s;
-}
-
-#sm-banner .banner-box button:hover::after{
-  transform: translate(-20px);
-  transition: padding-left .25s;
-}
-
 /*  */
 
 #sm-banner .banner-box2 {
@@ -487,10 +467,10 @@ body {
   border-radius: 25px;
 }
 
-#sm-banner .banner-box2:hover{
+/* #sm-banner .banner-box2:hover{
   background: url("img/banner/dragonball.png");
   transition: background .55s;
-}
+} */
 
 #sm-banner h4 {
   color: #fff;
@@ -512,6 +492,11 @@ body {
 }
 
 #sm-banner .banner-box2:hover button {
+  background: #088178;
+  border: 1px solid #088178;
+}
+
+#sm-banner .banner-box:hover button {
   background: #088178;
   border: 1px solid #088178;
 }
@@ -658,36 +643,97 @@ body {
   white-space: nowrap;
   cursor: pointer;
   border: none;
-  transition: background-color .25s, padding-right .25s;
+  transition: background-color 0.25s, padding-right 0.25s;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-#newsletter i{
+#newsletter i {
   opacity: 0;
 }
 
-#newsletter button:hover{
+#newsletter button:hover {
   background-color: #07726a;
   padding-right: 25px;
 }
 
-#newsletter button::after{ 
-  content: '\f178';
+#newsletter button::after {
+  content: "\f178";
   z-index: 0;
   transform: translate(-17px, -50%);
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   font-weight: 100;
   opacity: 0;
-  transition: transform .25s, opacity .25s;
+  transition: transform 0.25s, opacity 0.25s;
 }
 
-#newsletter button:hover::after{
+#newsletter button:hover::after {
   transform: translate(5px, -50%);
   opacity: 1;
 }
 
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #088178;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
 /* Produto */
 
 /* Blog */
